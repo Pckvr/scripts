@@ -1,0 +1,10 @@
+#VM Instance configuration
+export VM_NAME=vm-test
+export VM_ZONE=europe-west2-c
+export VM_IMAGE_FAMILY=ubuntu-1804-lts
+export VM_IMAGE_PROJECT=gce-uefi-images
+export VM_CPU_AMOUNT=1
+export VM_MEMORY_AMOUNT=5
+export VM_BOOT_DISK_SIZE=30
+#in quotation marks, separated by space
+export VM_TAGS=""

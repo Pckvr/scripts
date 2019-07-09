@@ -1,0 +1,7 @@
+export SERVICEACCOUNT_NAME=Test-Service-Account
+export IAM_POLICY_FILE=~/${SERVICEACCOUNT_NAME}/iam-policy
+
+export PROJECT_ID=johnny-20091993
+export PROJECT_NAME=New-Project
+
+#vm variables in vm config
