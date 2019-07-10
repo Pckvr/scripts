@@ -1,10 +1,10 @@
 #!/bin/bash
 
-source 00_default_variables
+source config
 
 #create directory for service account
-mkdir ~/${var.project}+service_account
+mkdir ~/${SERVICEACCOUNT_NAME}
 
 #create service account
-gcloud iam service-accounts create --display-name=${var.project}+service_account test-service-account
+gcloud iam service-accounts create --display-name=${SERVICEACCOUNT_NAME} service-account
 

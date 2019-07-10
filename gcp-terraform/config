@@ -1,0 +1,7 @@
+export SERVICEACCOUNT_NAME=Service-Account
+export IAM_POLICY_FILE=~/${SERVICEACCOUNT_NAME}/iam-policy
+
+export PROJECT_ID=johnny-200993
+export PROJECT_NAME=Pool-Manager
+
+#vm variables in vm config
