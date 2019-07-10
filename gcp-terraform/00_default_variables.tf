@@ -1,5 +1,5 @@
 variable "project" {
-	default = "Pool-Manager"
+	default = "johnny-200993"
 }
 //vm name 
 variable "name" {
