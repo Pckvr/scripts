@@ -51,3 +51,5 @@ echo 'GCLOUD_PROJECT=$(echo -n ${GCLOUD_CONFIG} | jq -r '.core.project')' >> ~/.
 echo 'GCLOUD_REGION=$(echo -n ${GCLOUD_CONFIG} | jq -r 'compute.region')' >> ~/.bashrc
 echo 'GCLOUD_ZONE=$(echo -n ${GCLOUD_CONFIG} | jq -r '.compute.zone')' >> ~/.bashrc
 
+echo "*****installing terraform*****"
+./terraform-install

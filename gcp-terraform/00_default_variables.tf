@@ -3,7 +3,7 @@ variable "project" {
 }
 //vm name 
 variable "name" {
-	default = "Pool-ManagerVM"
+	default = "pool-manager-vm"
 }
 
 variable "machine_type" {
