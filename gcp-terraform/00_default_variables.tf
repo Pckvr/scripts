@@ -40,7 +40,6 @@ variable "package_manager" {
 
 variable "update_packages" {
 	default = {
-		"yum" = "sudo yum update -y",
 		"apt" = "sudo apt update && sudo apt upgrade -y"
 	}
 }
@@ -53,7 +52,6 @@ variable "packages" {
 
 variable "install_packages" {
 	default = {
-		"yum" = "sudo yum install -y",
 		"apt" = "sudo apt install -y"
 	}
 }
@@ -65,3 +63,12 @@ variable "scripts" {
 variable "allowed_ports" {
 	default = ["22"]
 }
+
+variable "allowed_angular" {
+  default = ["4200"]
+}
+
+variable "allowed_node" {
+  default = ["8080"]
+}
+
