@@ -1,5 +1,5 @@
 variable "project" {
-	default = "johnny-200993"
+	default = "terraform-mean-app-1562834068"
 }
 //vm name 
 variable "name" {
