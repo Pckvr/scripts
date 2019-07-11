@@ -1,8 +1,12 @@
 #!/bin/bash
 sudo apt install -y jq
 
+
+project_name=terraform-mean-app
+
+
 echo "*****creating project*****"
-project_name=terraform
+
 #project id + timestamp to ensure unique
 project_id="${project_name}-$(date +%s)"
 gcloud -q projects create ${project_id} --name="${project_name}" --set-as-default

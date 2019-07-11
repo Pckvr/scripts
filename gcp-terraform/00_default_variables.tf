@@ -60,9 +60,9 @@ variable "install_packages" {
 }
 
 variable "scripts" {
-	default = []
+	default = ["test1"]
 }
 
 variable "allowed_ports" {
-	default = ["22", "8080", "8081", "4200", "27017"]
+	default = ["22"]
 }
