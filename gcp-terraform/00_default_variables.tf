@@ -23,7 +23,7 @@ variable "network" {
 }
 
 variable "ssh_user" {
-	default = "terraform"
+	default = "johnny_peckover"
 }
 
 variable "public_key" {
