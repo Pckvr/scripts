@@ -60,7 +60,7 @@ variable "install_packages" {
 }
 
 variable "scripts" {
-	default = ["test1"]
+	default = []
 }
 
 variable "allowed_ports" {

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo apt-get install git-core
+
+git clone https://github.com/JPeckoverQA/MEAN_scripts.git
+cd MEAN_scripts
+./install
