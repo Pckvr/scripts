@@ -47,8 +47,7 @@ variable "update_packages" {
 
 variable "packages" {
 	default = [
-		"wget",
-		"unzip"
+		"wget"
 	]
 }
 
