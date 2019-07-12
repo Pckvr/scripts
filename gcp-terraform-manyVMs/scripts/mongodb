@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo apt-get install git-core
+
+sudo git clone https://github.com/JPeckoverQA/MEAN_scripts
+sudo chmod -R 777 MEAN_scripts
+cd MEAN_scripts
+git checkout database
+./mongodb.sh

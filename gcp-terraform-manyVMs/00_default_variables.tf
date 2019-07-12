@@ -3,8 +3,14 @@ variable "project" {
 }
 //vm name 
 variable "name" {
-	default = "pool-manager-vm"
+  default = "mongodb"
 }
+variable "name1" {
+  default = "api"
+}
+
+variable "name2" {
+  default = "angular"
 
 variable "machine_type" {
 	default = "f1-micro"
