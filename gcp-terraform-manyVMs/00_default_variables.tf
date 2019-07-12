@@ -11,6 +11,7 @@ variable "name1" {
 
 variable "name2" {
   default = "angular"
+}
 
 variable "machine_type" {
 	default = "f1-micro"
@@ -64,14 +65,12 @@ variable "install_packages" {
 
 variable "scripts" {
 	default = [
-		"pool-manager"
+	
 	]
 }
+
 variable "mongo" {
-  default = "scripts/mongodb"
-}
-variable "api" {
-  default = "scripts/api"
+default = ["./scripts/mongodb"]
 }
 
 variable "allowed_ports" {

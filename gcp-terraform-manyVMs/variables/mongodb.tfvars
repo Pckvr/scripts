@@ -4,6 +4,6 @@ packages = [
 			"git"
 ]
 scripts = [
-    "scripts/pool-manager"
+    # "scripts/mongodb"
 ]
-allowed_ports = [ "22", "4200", "8080", "27017"]
+allowed_ports = [ "22", "27017"]

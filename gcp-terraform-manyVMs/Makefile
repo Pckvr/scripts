@@ -6,11 +6,16 @@ TERRAFORM_DESTROY = "terraform destroy -auto-approve -var-file="
 terraform-init:
 	@terraform init
 
-autopool-apply:
-	@"${TERRAFORM_APPLY}${VAR_DIR}"/pool-manager.tfvars
+mongodb-apply:
+	@"${TERRAFORM_APPLY}${VAR_DIR}"/mongodb.tfvars
 
-autopool-destroy:
-	@"${TERRAFORM_DESTROY}${VAR_DIR}"/pool-manager.tfvars
+mongodb-destroy:
+	@"${TERRAFORM_DESTROY}${VAR_DIR}"/mongodb.tfvars
 
+api-apply:
+	@"${TERRAFORM_APPLY}${VAR_DIR}"/api.tfvars
 
-.PHONY = terraform-init pool-manager-apply pool-manager-destroy
+api-destroy:
+	@"${TERRAFORM_DESTROY}${VAR_DIR}"/api.tfvars
+
+.PHONY = terraform-init mongodb-apply mongodb-destroy api-apply api-destroy

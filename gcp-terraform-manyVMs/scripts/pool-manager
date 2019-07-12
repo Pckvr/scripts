@@ -1,9 +1,0 @@
-#!/bin/bash
-
-sudo apt-get install git-core
-
-sudo git clone https://github.com/JPeckoverQA/MEAN_scripts
-cd MEAN_scripts
-git checkout terraform
-sudo chmod +x install.sh
-./install.sh
