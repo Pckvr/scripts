@@ -11,6 +11,8 @@ cd TeamAPoolProjectBackend
 git checkout docker
 ./setup-backend.sh
 
+cd ..
+
 cd TeamAPoolProjectUI
 git checkout docker
 ./setup-frontend.sh
