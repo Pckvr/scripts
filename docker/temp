@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mkdir src
+cd src
+mkdir main
+cd main
+mkdir java
+cd java
+mkdir com
+cd com
+mkdir example
+cd example
+mkdir helloworld
+cd helloworld
+touch HelloWorldApplication.java
