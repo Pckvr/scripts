@@ -17,3 +17,5 @@ docker rmi -f $(docker images -q)
 #docker system prune -f
 
 docker pull localhost:5000/my/nginx
+
+docker run -d localhost:5000/my/nginx
