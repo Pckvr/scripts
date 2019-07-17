@@ -2,8 +2,8 @@
 
 docker stop $(docker ps -aq)
 
-docker rm $(docker ps -aq)
+docker rm -f $(docker ps -aq)
 
-docker rmi $(docker images -q)
+docker rmi -f $(docker images -q)
 
 docker system prune -f
