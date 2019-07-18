@@ -1,0 +1,45 @@
+version: '3.7'
+
+volumes:
+  mongo:
+  jenkins-home:
+
+services:
+  mongo:
+    image: mongo:latest
+    volumes:
+    - type: volume
+      source: mongo
+      target: /data/db
+ 
+  backend:
+    image: backend:latest
+    build: ./TeamAPoolProjectBackend
+    depends_on:
+    - mongo
+
+  frontend:
+    image: frontend:latest
+    build: ./TeamAPoolProjectUI
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    depends_on:
+    - backend
+    - jenkins
+
+  jenkins:
+    image: jpeckover/jenkins:latest
+    volumes:
+    - type: volume
+      source: jenkins-home
+      target: /usr/jenkins_home
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+    environment:
+    - JENKINS_OPTS="--prefix=/jenkins"
+
+
+  
