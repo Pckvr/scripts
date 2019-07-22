@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: jpeckover/pool_frontend:latest
+        image: jpeckover/pool_backend:latest
         ports:
         - containerPort: 8080
