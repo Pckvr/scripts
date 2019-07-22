@@ -7,9 +7,9 @@ sudo rm -rf pool-app
 mkdir pool-app
 cd pool-app
 
-cp -r ~/scripts/kubernetes/pool-app/mongo
-cp -r ~/scripts/kubernetes/pool-app/jenkins
-cp -r ~/scripts/kubernetes/pool-app/nginx
+cp -r ~/scripts/kubernetes/pool-app/mongo/ .
+cp -r ~/scripts/kubernetes/pool-app/jenkins/ .
+cp -r ~/scripts/kubernetes/pool-app/nginx/ .
 
 kubectl apply -f mongo
 
@@ -20,7 +20,7 @@ git checkout docker
 
 cp ~/scripts/kubernetes/pool-app/backend/deployment.yaml .
 cp ~/scripts/kubernetes/pool-app/backend/service.yaml .
-kubectl apply -f depdeployment.yaml
+kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
 cd ..
@@ -30,8 +30,10 @@ git checkout docker-multistage
 
 cp ~/scripts/kubernetes/pool-app/frontend/deployment.yaml .
 cp ~/scripts/kubernetes/pool-app/frontend/service.yaml .
-kubectl apply -f depdeployment.yaml
+kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
+
+cd ..
 
 kubectl apply -f jenkins
 kubectl apply -f nginx

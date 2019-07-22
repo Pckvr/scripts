@@ -10,10 +10,4 @@ spec:
       image: mongo:latest
       ports:
       - containerPort: 27017
-      volumeMounts:
-        - mountPath: "/data/db"
-          name: mongo
-  volumes:
-    - name: mongo
-      persistentVolumeClaim:
-        claimName: mongo
+
