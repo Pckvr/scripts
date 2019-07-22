@@ -10,6 +10,7 @@ data:
         index index.html;
         include /etc/nginx/mime.types;
         location / {
+          proxy_pass http://frontend/;
             try_files $uri $uri/ /;
         }
         location /jenkins/ {

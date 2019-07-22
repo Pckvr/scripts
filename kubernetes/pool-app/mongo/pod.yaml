@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: mongo
-      image: mongo/mongo:latest
+      image: mongo:latest
       ports:
       - containerPort: 27017
       volumeMounts:
