@@ -7,7 +7,7 @@ rm -rf TeamAPoolProjectBackend
 rm -rf TeamAPoolProjectUI
 rm -f docker-compose.yaml
 
-cp ~/scripts/docker-compose/pool-app/docker-compose.yaml ~/
+cp ~/scripts/docker-compose/pool-project/docker-compose.yaml ~/
 
 
 
