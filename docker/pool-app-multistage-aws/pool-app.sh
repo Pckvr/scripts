@@ -10,7 +10,7 @@ cd pool-app
 git clone https://github.com/JPeckoverQA/TeamAPoolProjectBackend.git
 git clone https://github.com/JPeckoverQA/TeamAPoolProjectUI.git
 cd TeamAPoolProjectBackend
-git checkout docker-no-mongo
+git checkout docker-aws
 ./setup-backend.sh
 
 cd ..
