@@ -9,5 +9,5 @@ cd pool-app
 
 git clone https://github.com/JPeckoverQA/TeamAPoolProjectUI.git
 cd TeamAPoolProjectUI
-git checkout docker-multistage
+git checkout docker-aws
 ./setup-frontend.sh
