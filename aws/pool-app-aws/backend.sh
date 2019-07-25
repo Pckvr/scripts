@@ -9,5 +9,5 @@ cd pool-app
 
 git clone https://github.com/JPeckoverQA/TeamAPoolProjectBackend.git
 cd TeamAPoolProjectBackend
-git checkout docker-aws
+git checkout docker-aws-terraform
 ./setup-backend.sh
