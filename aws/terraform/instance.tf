@@ -17,9 +17,9 @@ resource "aws_instance" "default" {
       "sudo apt update",
       "sudo apt install git",
       "git clone https://github.com/JPeckoverQA/scripts.git",
-      "./scripts/docker/install-docker.sh",
-      "./scripts/docker-compose/install-docker-compose.sh",
-      "./scripts/aws/pool-app-aws/pool-app.sh"
+      "sudo ./scripts/docker/install-docker.sh",
+      "sudo ./scripts/docker-compose/install-docker-compose.sh",
+      "sudo ./scripts/aws/pool-app-aws/pool-app.sh"
     ]
   }
 }
