@@ -2,7 +2,7 @@
 sudo apt-get install wget unzip -y
 
 #download terraform archive
-export VER="0.12.3"
+export VER="0.12.5"
 wget https://releases.hashicorp.com/terraform/${VER}/terraform_${VER}_linux_amd64.zip
 
 #extract archive
