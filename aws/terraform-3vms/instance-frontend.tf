@@ -28,8 +28,8 @@ resource "aws_instance" "frontend" {
       "echo ***** INSTALL DOCKER-COMPOSE *****",
       "./scripts/docker-compose/install-docker-compose.sh",
       "echo ***** POOL APP SET UP *****",
-      "sudo chmod +x scripts/aws/pool-app-aws/setup-frontend.sh",
-      "./scripts/aws/pool-app-aws/setup-frontend.sh"
+      "sudo chmod +x scripts/aws/pool-app-aws/frontend.sh",
+      "./scripts/aws/pool-app-aws/frontend.sh"
     ]
   }
 }
