@@ -14,8 +14,12 @@ resource "aws_instance" "default" {
       private_key = "${file("~/.ssh/id_rsa")}"
     }
     inline = [
-      "echo hi",
-      "hostname"
+      "sudo apt update"
+      "sudo apt install git"
+      "git clone https://github.com/JPeckoverQA/scripts.git"
+      "./scripts/docker/install-docker.sh"
+      "./scripts/docker-compose/install-docker-compose.sh"
+      "./scripts/aws/pool-app-aws/pool-app.sh"
     ]
   }
 }
