@@ -14,11 +14,17 @@ resource "aws_instance" "default" {
       private_key = "${file("~/.ssh/id_rsa")}"
     }
     inline = [
+      "echo ***** UPDATING *****"
       "sudo apt update",
+      "echo ***** INSTALL GIT *****"
       "sudo apt install git",
+      "echo ***** CLONING SCRIPTS *****"
       "git clone https://github.com/JPeckoverQA/scripts.git",
+      "echo ***** INSTALL DOCKER *****"
       "sudo ./scripts/docker/install-docker.sh",
+      "echo ***** INSTALL DOCKER-COMPOSE *****"
       "sudo ./scripts/docker-compose/install-docker-compose.sh",
+      "echo ***** POOL APP SET UP *****"
       "sudo ./scripts/aws/pool-app-aws/pool-app.sh"
     ]
   }
