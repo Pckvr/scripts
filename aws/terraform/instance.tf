@@ -22,7 +22,6 @@ resource "aws_instance" "default" {
       "git clone https://github.com/JPeckoverQA/scripts.git",
       "echo ***** INSTALL DOCKER *****",
       "./scripts/docker/install-docker.sh",
-      "exit",
       "echo ***** INSTALL DOCKER-COMPOSE *****",
       "./scripts/docker-compose/install-docker-compose.sh",
       "echo ***** POOL APP SET UP *****",
