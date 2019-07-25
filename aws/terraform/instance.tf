@@ -21,11 +21,11 @@ resource "aws_instance" "default" {
       "echo ***** CLONING SCRIPTS *****",
       "git clone https://github.com/JPeckoverQA/scripts.git",
       "echo ***** INSTALL DOCKER *****",
-      "sudo ./scripts/docker/install-docker.sh",
+      "./scripts/docker/install-docker.sh",
       "echo ***** INSTALL DOCKER-COMPOSE *****",
-      "sudo ./scripts/docker-compose/install-docker-compose.sh",
+      "./scripts/docker-compose/install-docker-compose.sh",
       "echo ***** POOL APP SET UP *****",
-      "sudo ./scripts/aws/pool-app-aws/pool-app.sh"
+      "./scripts/aws/pool-app-aws/pool-app.sh"
     ]
   }
 }
