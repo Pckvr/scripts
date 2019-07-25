@@ -6,6 +6,6 @@ curl https://get.docker.com | sudo bash
 
 sudo usermod -aG docker $(whoami)
 
-newgrp docker
+sudo newgrp docker
 
 echo "YOU MUST NOW RESTART THE VM"
