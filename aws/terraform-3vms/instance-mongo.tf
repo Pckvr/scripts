@@ -26,7 +26,7 @@ resource "aws_instance" "mongo" {
       "echo ***** INSTALL DOCKER *****",
       "./scripts/docker/install-docker.sh",
       "echo ***** INSTALLING MONGO IMAGE *****",
-      "sudo docker run -d --name mongo mongo:latest"
+      "sudo docker run -d --name mongo -p 27017:27017 mongo:latest"
     ]
   }
 }
