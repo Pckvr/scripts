@@ -1,5 +1,5 @@
 resource "aws_security_group" "mongo" {
-  name = "default-security-group"
+  name = "mongo-security-group"
   description = "Mongo Security Group"
   vpc_id = "${aws_vpc.default.id}"
   ingress {

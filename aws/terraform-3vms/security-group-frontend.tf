@@ -1,5 +1,5 @@
 resource "aws_security_group" "frontend" {
-  name = "default-security-group"
+  name = "frontend-security-group"
   description = "Frontend Security Group"
   vpc_id = "${aws_vpc.default.id}"
   ingress {
