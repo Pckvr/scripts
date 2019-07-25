@@ -17,7 +17,7 @@ resource "aws_instance" "default" {
       "echo ***** UPDATING *****",
       "sudo apt update",
       "echo ***** INSTALL GIT *****",
-      "sudo apt install git",
+      "sudo apt install git -y",
       "echo ***** CLONING SCRIPTS *****",
       "git clone https://github.com/JPeckoverQA/scripts.git",
       "echo ***** INSTALL DOCKER *****",
