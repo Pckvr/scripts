@@ -25,6 +25,7 @@ resource "aws_instance" "default" {
       "echo ***** INSTALL DOCKER-COMPOSE *****",
       "./scripts/docker-compose/install-docker-compose.sh",
       "echo ***** POOL APP SET UP *****",
+      "sudo chmod +x scripts/aws/pool-app-aws/pool-app.sh"
       "./scripts/aws/pool-app-aws/pool-app.sh"
     ]
   }
