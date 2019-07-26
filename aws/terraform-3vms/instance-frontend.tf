@@ -28,8 +28,8 @@ resource "aws_instance" "frontend" {
       "echo ***** INSTALL DOCKER-COMPOSE *****",
       "./scripts/docker-compose/install-docker-compose.sh",
       "echo ***** POOL APP SET UP *****",
-      "sudo chmod +x scripts/aws/pool-app-aws/frontend.sh",
-      "./scripts/aws/pool-app-aws/frontend.sh"
+      "sudo docker pull jpeckover/pool_frontend:latest .",
+      "sudo docker run -d --name frontend -p 80:80 docker.io/jpeckover/pool_frontend:latest"
     ]
   }
 }
