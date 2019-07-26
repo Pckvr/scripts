@@ -28,8 +28,8 @@ resource "aws_instance" "backend" {
       "echo ***** INSTALL DOCKER-COMPOSE *****",
       "./scripts/docker-compose/install-docker-compose.sh",
       "echo ***** POOL APP SET UP *****",
-      "sudo chmod +x scripts/aws/pool-app-aws/backend.sh",
-      "./scripts/aws/pool-app-aws/backend.sh"
+      "sudo docker pull jpeckover/pool-backend-aws-terraform:latest",
+      "sudo docker run -d --name backend -e MONGO_HOST=${aws_instance.mongo.private_ip} -p 8080:8080 jpeckover/pool-backend-aws-terraform:latest"      
     ]
   }
 }
