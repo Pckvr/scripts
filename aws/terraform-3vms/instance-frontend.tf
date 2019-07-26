@@ -8,6 +8,7 @@ resource "aws_instance" "frontend" {
   subnet_id = "${aws_subnet.default.id}"
   vpc_security_group_ids = ["${aws_security_group.frontend.id}"]
   associate_public_ip_address = true
+  private_ip = "10.0.0.23"
   key_name = "default-key-pair"
   provisioner "remote-exec" {
     connection {
