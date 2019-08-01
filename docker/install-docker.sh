@@ -8,6 +8,8 @@ sudo usermod -aG docker $(whoami)
 
 sudo newgrp docker
 
+exit
+
 echo "*************************************************************************************"
 echo "**********DOCKER USER HAS BEEN ADDED AND INITIALISED**********"
 echo "*************************************************************************************"
