@@ -6,9 +6,8 @@ curl https://get.docker.com | sudo bash
 
 sudo usermod -aG docker $(whoami)
 
-sudo newgrp docker
+newgrp docker
 
-exit
 
 echo "*************************************************************************************"
 echo "**********DOCKER USER HAS BEEN ADDED AND INITIALISED**********"
